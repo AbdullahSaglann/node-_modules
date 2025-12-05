@@ -23,3 +23,19 @@ npm error
 npm error To see a list of scripts, run:
 npm error   npm run
 npm error A complete log of this run can be found in: C:\Users\syadm55576\AppData\Local\npm-cache\_logs\2025-12-05T05_59_33_209Z-debug-0.log
+
+ERROR 2 
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard>npm run dev
+npm error Missing script: "dev"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: C:\Users\syadm55576\AppData\Local\npm-cache\_logs\2025-12-05T06_03_11_595Z-debug-0.log
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard>npm run
+Lifecycle scripts included in node_module@1.0.0:
+  test
+    echo "Error: no test specified" && exit 1
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard>
