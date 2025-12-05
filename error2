@@ -1,0 +1,99 @@
+Import trace:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/globals.css [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/layout.tsx [Server Component]
+
+
+
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx:6:1
+Module not found: Can't resolve 'date-fns'
+  4 | import dynamic from 'next/dynamic'
+  5 | import axios from 'axios'
+> 6 | import { format, subDays } from 'date-fns'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import RiskTimelineChart from '../components/RiskTimelineChart'
+  8 | import ChannelActivity from '../components/ChannelActivity'
+  9 | import RiskLevelBadge from '../components/RiskLevelBadge'
+
+
+
+Import traces:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js:10:1
+Module not found: Can't resolve 'follow-redirects'
+   8 | import http2 from 'http2';
+   9 | import util from 'util';
+> 10 | import followRedirects from 'follow-redirects';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 | import zlib from 'zlib';
+  12 | import {VERSION} from '../env/data.js';
+  13 | import transitionalDefaults from '../defaults/transitional.js';
+
+
+
+Import trace:
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/adapters.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/axios.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/platform/node/classes/FormData.js:1:1
+Module not found: Can't resolve 'form-data'
+> 1 | import FormData from 'form-data';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  2 |
+  3 | export default FormData;
+  4 |
+
+
+
+Import trace:
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/platform/node/classes/FormData.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/helpers/toFormData.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/axios.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js:5:1
+Module not found: Can't resolve 'proxy-from-env'
+  3 | import buildFullPath from '../core/buildFullPath.js';
+  4 | import buildURL from './../helpers/buildURL.js';
+> 5 | import proxyFromEnv from 'proxy-from-env';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import http from 'http';
+  7 | import https from 'https';
+  8 | import http2 from 'http2';
+
+
+
+Import trace:
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/adapters.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/axios.js [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
