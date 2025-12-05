@@ -83,3 +83,30 @@ export default function RootLayout({
   )
 }
 
+
+
+
+
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/RiskTimelineChart.tsx:8:28
+Module not found: Can't resolve 'react-plotly.js'
+   6 | import { format, subDays } from 'date-fns'
+   7 |
+>  8 | const Plot = dynamic(() => import('react-plotly.js'), { ssr: false })
+     |                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+   9 |
+  10 | import { getApiUrlDynamic } from '@/lib/api-config'
+  11 |
+ 
+ 
+Import traces:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/RiskTimelineChart.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/RiskTimelineChart.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+https://nextjs.org/docs/messages/module-not-found
