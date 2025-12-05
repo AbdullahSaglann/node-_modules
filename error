@@ -1,0 +1,25 @@
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\syadm55576\AppData\Local\npm-cache\_logs\2025-12-04T13_13_30_475Z-debug-0.log
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard>npm install
+npm error code ENOENT
+npm error syscall open
+npm error path C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard\package.json
+npm error errno -4058
+npm error enoent Could not read package.json: Error: ENOENT: no such file or directory, open 'C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard\package.json'
+npm error enoent This is related to npm not being able to find a file.
+npm error enoent
+npm error A complete log of this run can be found in: C:\Users\syadm55576\AppData\Local\npm-cache\_logs\2025-12-04T13_13_47_710Z-debug-0.log
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Dashboard>npm run dev
+npm error Missing script: "dev"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: C:\Users\syadm55576\AppData\Local\npm-cache\_logs\2025-12-05T05_59_33_209Z-debug-0.log
