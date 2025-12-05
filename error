@@ -116,3 +116,20 @@ app.listen(port, () => {
     console.log(`Server çalışıyor → http://localhost:${port}`);
 });
 
+
+
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Offline Node.js backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.16.3",
+    "redis": "^5.10.0"
+  }
+}
