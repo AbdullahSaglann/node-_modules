@@ -1,0 +1,14 @@
+PS C:\Users\syadm55576\Desktop\DLP_RiskAnalyzer_20251205_130816\dashboard> npm run dev
+
+> dlp-risk-dashboard@1.0.0 dev
+> next dev -H 0.0.0.0 -p 3002
+
+'next' is not recognized as an internal or external command,
+operable program or batch file.
+PS C:\Users\syadm55576\Desktop\DLP_RiskAnalyzer_20251205_130816\dashboard> npm run build
+
+> dlp-risk-dashboard@1.0.0 build
+> next build
+
+'next' is not recognized as an internal or external command,
+operable program or batch file.
