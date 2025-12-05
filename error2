@@ -1,99 +1,51 @@
-Import trace:
-  Client Component Browser:
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/globals.css [Client Component Browser]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/layout.tsx [Server Component]
+PS C:\Users\abdul\Desktop\node_module> python3 -m http.server
+Serving HTTP on :: port 8000 (http://[::]:8000/) ...
+::ffff:192.168.50.20 - - [05/Dec/2025 09:57:32] "GET / HTTP/1.1" 200 -
+::ffff:192.168.50.20 - - [05/Dec/2025 09:57:33] code 404, message File not found
+::ffff:192.168.50.20 - - [05/Dec/2025 09:57:33] "GET /favicon.ico HTTP/1.1" 404 -
+::ffff:192.168.50.20 - - [05/Dec/2025 09:57:39] "GET /dlp-dashboard.zip HTTP/1.1" 200 -
 
 
+PS C:\Users\abdul> ipconfig
 
-./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx:6:1
-Module not found: Can't resolve 'date-fns'
-  4 | import dynamic from 'next/dynamic'
-  5 | import axios from 'axios'
-> 6 | import { format, subDays } from 'date-fns'
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  7 | import RiskTimelineChart from '../components/RiskTimelineChart'
-  8 | import ChannelActivity from '../components/ChannelActivity'
-  9 | import RiskLevelBadge from '../components/RiskLevelBadge'
+Windows IP Configuration
 
 
+Unknown adapter HotspotShield Network Adapter:
 
-Import traces:
-  Client Component Browser:
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
 
-  Client Component SSR:
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+Ethernet adapter vEthernet (WSL (Hyper-V firewall)):
 
-https://nextjs.org/docs/messages/module-not-found
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::4c5a:5661:8b03:af60%46
+   IPv4 Address. . . . . . . . . . . : 172.26.96.1
+   Subnet Mask . . . . . . . . . . . : 255.255.240.0
+   Default Gateway . . . . . . . . . :
 
+Ethernet adapter Ethernet 3:
 
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::b62e:b9f3:863d:8e36%19
+   IPv4 Address. . . . . . . . . . . : 192.168.56.1
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . :
 
-./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js:10:1
-Module not found: Can't resolve 'follow-redirects'
-   8 | import http2 from 'http2';
-   9 | import util from 'util';
-> 10 | import followRedirects from 'follow-redirects';
-     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  11 | import zlib from 'zlib';
-  12 | import {VERSION} from '../env/data.js';
-  13 | import transitionalDefaults from '../defaults/transitional.js';
+Wireless LAN adapter Yerel Ağ Bağlantısı* 3:
 
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
 
+Wireless LAN adapter Wi-Fi:
 
-Import trace:
-  Client Component SSR:
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/adapters.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/axios.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::aa27:f235:36ed:c8a4%8
+   IPv4 Address. . . . . . . . . . . : 192.168.50.29
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : 192.168.50.1
 
-https://nextjs.org/docs/messages/module-not-found
+Ethernet adapter Bluetooth Ağ Bağlantısı:
 
-
-
-./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/platform/node/classes/FormData.js:1:1
-Module not found: Can't resolve 'form-data'
-> 1 | import FormData from 'form-data';
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  2 |
-  3 | export default FormData;
-  4 |
-
-
-
-Import trace:
-  Client Component SSR:
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/platform/node/classes/FormData.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/helpers/toFormData.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/axios.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
-
-
-
-./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js:5:1
-Module not found: Can't resolve 'proxy-from-env'
-  3 | import buildFullPath from '../core/buildFullPath.js';
-  4 | import buildURL from './../helpers/buildURL.js';
-> 5 | import proxyFromEnv from 'proxy-from-env';
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  6 | import http from 'http';
-  7 | import https from 'https';
-  8 | import http2 from 'http2';
-
-
-
-Import trace:
-  Client Component SSR:
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/http.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/adapters/adapters.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/axios/lib/axios.js [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
-    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
-
-https://nextjs.org/docs/messages/module-not-found
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
