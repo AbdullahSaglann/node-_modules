@@ -39,3 +39,45 @@ Unhandled Rejection: TypeError: fetch failed
     code: 'UND_ERR_CONNECT_TIMEOUT'
   }
 }
+
+
+ ⨯ ./app/globals.css
+Error evaluating Node.js code
+Error: Cannot find module 'nanoid/non-secure'
+    [at <anonymous> (turbopack:///[project]/node_modules/postcss/lib/input.js:3:15)]
+    [at module evaluation (turbopack:///[project]/node_modules/postcss/lib/input.js:3:15)]
+    [at instantiateModule (turbopack:///[turbopack]/nodejs/runtime.ts:228:5)]
+    [at getOrInstantiateModuleFromParent (turbopack:///[turbopack]/nodejs/runtime.ts:261:10)]
+    [at Context.commonJsRequire (turbopack:///[turbopack]/shared/runtime-utils.ts:389:10)]
+    [at module evaluation (turbopack:///[project]/node_modules/postcss/lib/fromJSON.js:6:5)]
+    [at instantiateModule (turbopack:///[turbopack]/nodejs/runtime.ts:228:5)]
+    [at getOrInstantiateModuleFromParent (turbopack:///[turbopack]/nodejs/runtime.ts:261:10)]
+    [at Context.commonJsRequire (turbopack:///[turbopack]/shared/runtime-utils.ts:389:10)]
+    [at module evaluation (turbopack:///[project]/node_modules/postcss/lib/postcss.js:9:5)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+./node_modules/postcss/lib/input.js:3:18
+Module not found: Can't resolve 'nanoid/non-secure'
+  1 | 'use strict'
+  2 |
+> 3 | let { nanoid } = require('nanoid/non-secure')
+    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  4 | let { isAbsolute, resolve } = require('path')
+  5 | let { SourceMapConsumer, SourceMapGenerator } = require('source-map-js')
+  6 | let { fileURLToPath, pathToFileURL } = require('url')
+
+
+
+Import trace:
+  postcss:
+    ./node_modules/postcss/lib/input.js
+    ./node_modules/postcss/lib/postcss.js
+    ./node_modules/postcss/lib/postcss.mjs
+
+https://nextjs.org/docs/messages/module-not-found
