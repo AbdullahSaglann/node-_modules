@@ -61,3 +61,58 @@ C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-ad
   }
 }
 
+
+
+const express = require("express");
+const { Pool } = require("pg");
+const Redis = require("redis");
+
+const app = express();
+const port = 3000;
+
+// PostgreSQL Bağlantısı
+const db = new Pool({
+    host: "localhost",
+    port: 5432,
+    user: "postgres",
+    password: "SeninPostgresParolan",
+    database: "postgres"
+});
+
+// Redis bağlantısı
+const redis = Redis.createClient({
+    url: "redis://127.0.0.1:6379"
+});
+
+redis.connect();
+
+// Test route
+app.get("/", (req, res) => {
+    res.send("API çalışıyor 🚀");
+});
+
+// PostgreSQL test route
+app.get("/test-db", async (req, res) => {
+    try {
+        const result = await db.query("SELECT NOW()");
+        res.json({ db_time: result.rows[0] });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+// Redis test route
+app.get("/test-redis", async (req, res) => {
+    try {
+        await redis.set("ping", "PONG");
+        const response = await redis.get("ping");
+        res.json({ redis_response: response });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
+app.listen(port, () => {
+    console.log(`Server çalışıyor → http://localhost:${port}`);
+});
+
