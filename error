@@ -110,3 +110,164 @@ Import traces:
     ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
  
 https://nextjs.org/docs/messages/module-not-found
+
+
+
+
+
+
+
+
+
+
+
+
+> dlp-risk-dashboard@1.0.0 dev
+> next dev -H 0.0.0.0 -p 3002
+ 
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+We detected multiple lockfiles and selected the directory of C:\Users\syadm55576\Desktop\package-lock.json as the root directory.
+To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+Detected additional lockfiles:
+   * C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\dashboard\package-lock.json
+   * C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\package-lock.json
+ 
+   ▲ Next.js 16.0.7 (Turbopack)
+   - Local:         http://localhost:3002
+   - Network:       http://0.0.0.0:3002
+   - Experiments (use with caution):
+     · optimizePackageImports
+ 
+✓ Starting...
+✓ Ready in 887ms
+⨯ ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/globals.css
+Error evaluating Node.js code
+Error: It looks like you're trying to use `tailwindcss` directly as a PostCSS plugin. The PostCSS plugin has moved to a separate package, so to continue using Tailwind CSS with PostCSS you'll need to install `@tailwindcss/postcss` and update your PostCSS configuration.
+    [at at (C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\dlp-risk-adaptive-protection-csharp-main\dashboard\node_modules\tailwindcss\dist\lib.js:38:1629)]
+    [at <anonymous> (turbopack:///[turbopack-node]/transforms/postcss.ts:56:14)]
+    [at <anonymous>]
+    [at Module.init (turbopack:///[turbopack-node]/transforms/postcss.ts:43:33)]
+    [at run (turbopack:///[turbopack-node]/ipc/evaluate.ts:77:20)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:103:5)]
+ 
+Import trace:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/globals.css [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/layout.tsx [Server Component]
+ 
+ 
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx:5:1
+Module not found: Can't resolve 'axios'
+  3 | import { useEffect, useState } from 'react'
+  4 | import dynamic from 'next/dynamic'
+> 5 | import axios from 'axios'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { format, subDays } from 'date-fns'
+  7 | import RiskTimelineChart from '../components/RiskTimelineChart'
+  8 | import ChannelActivity from '../components/ChannelActivity'
+ 
+ 
+Import traces:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+https://nextjs.org/docs/messages/module-not-found
+ 
+ 
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/ChannelActivity.tsx:4:1
+Module not found: Can't resolve 'axios'
+  2 |
+  3 | import { useState, useEffect } from 'react'
+> 4 | import axios from 'axios'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 |
+  6 | import { getApiUrlDynamic } from '@/lib/api-config'
+  7 |
+ 
+ 
+Import traces:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/ChannelActivity.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/ChannelActivity.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+https://nextjs.org/docs/messages/module-not-found
+ 
+ 
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/RiskTimelineChart.tsx:4:1
+Module not found: Can't resolve 'axios'
+  2 |
+  3 | import { useEffect, useState } from 'react'
+> 4 | import axios from 'axios'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import dynamic from 'next/dynamic'
+  6 | import { format, subDays } from 'date-fns'
+  7 |
+ 
+ 
+Import traces:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/RiskTimelineChart.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/components/RiskTimelineChart.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+https://nextjs.org/docs/messages/module-not-found
+ 
+ 
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx:6:1
+Module not found: Can't resolve 'date-fns'
+  4 | import dynamic from 'next/dynamic'
+  5 | import axios from 'axios'
+> 6 | import { format, subDays } from 'date-fns'
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  7 | import RiskTimelineChart from '../components/RiskTimelineChart'
+  8 | import ChannelActivity from '../components/ChannelActivity'
+  9 | import RiskLevelBadge from '../components/RiskLevelBadge'
+ 
+ 
+Import traces:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+  Client Component SSR:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component SSR]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+https://nextjs.org/docs/messages/module-not-found
+ 
+ 
+./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/react-plotly.js/react-plotly.js:10:38
+Module not found: Can't resolve 'plotly.js/dist/plotly'
+   8 | var _factory = _interopRequireDefault(require("./factory"));
+   9 |
+> 10 | var _plotly = _interopRequireDefault(require("plotly.js/dist/plotly"));
+     |                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  11 |
+  12 | function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+  13 |
+ 
+ 
+Import trace:
+  Client Component Browser:
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/node_modules/react-plotly.js/react-plotly.js [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Client Component Browser]
+    ./dlp-risk-adaptive-protection-csharp-main/dlp-risk-adaptive-protection-csharp-main/dashboard/app/page.tsx [Server Component]
+ 
+https://nextjs.org/docs/messages/module-not-found
