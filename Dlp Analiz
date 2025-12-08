@@ -1,0 +1,75 @@
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP API settings are not configured. Please configure via Settings page in the dashboard.
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Failed to get access token from Forcepoint DLP API
+      System.InvalidOperationException: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Failed to fetch incidents from Forcepoint DLP API
+      System.InvalidOperationException: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 146
+fail: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Failed to collect incidents from Forcepoint DLP API. Will retry on next interval. Error: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+      System.InvalidOperationException: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 146
+
+
+fail: DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient[0]
+      Error while fetching DLP configuration from Analyzer API
+      System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:5001)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+         at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+
+fail: DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient[0]
+      Error while fetching DLP configuration from Analyzer API
+      System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:5001)
+       ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+         at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+         at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient.FetchConfigAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\AnalyzerConfigClient.cs:line 37
+warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+
+warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Failed to load DLP configuration from Analyzer API. Collector will use appsettings.json defaults.
+warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Please ensure DLP API settings are configured via Settings page in the dashboard.
+info: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Subscribed to DLP config updates via Redis channel dlp:config:updated
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Redis broadcast: 172.16.245.126::9443, HTTPS=True, Timeout=30s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Failed to load DLP configuration from Analyzer API. Collector will use appsettings.json defaults.
+warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Please ensure DLP API settings are configured via Settings page in the dashboard.
+info: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Subscribed to DLP config updates via Redis channel dlp:config:updated
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Redis broadcast: 172.16.245.126::9443, HTTPS=True, Timeout=30s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
