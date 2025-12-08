@@ -241,4 +241,22 @@ warn: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
             SslProtocols = System.Security.Authentication.SslProtocols.Tls11 | 
                            System.Security.Authentication.SslProtocols.Tls12 | 
                            System.Security.Authentication.SslProtocols.Tls13
-        };
+        };,
+
+
+
+
+
+
+[System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $true }
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$headers = @{
+    "username" = "apiuser"
+    "password" = "SIFRENIZ"
+}
+try {
+    $response = Invoke-WebRequest -Uri "https://172.16.245.126:9443/dlp/rest/v1/auth/access-token" -Method POST -Headers $headers -TimeoutSec 60
+    $response.Content
+} catch {
+    Write-Host "Hata: $_"
+}
