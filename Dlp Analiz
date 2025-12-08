@@ -89,3 +89,26 @@ PS C:\Program Files\Redis> .\redis-server.exe
   TCP    127.0.0.1:53119        127.0.0.1:6379         ESTABLISHED     21680
   TCP    127.0.0.1:58241        127.0.0.1:6379         ESTABLISHED     17776
   TCP    127.0.0.1:58242        127.0.0.1:6379         ESTABLISHED     17776
+
+
+
+1. Analyzer Program.cs'e eklenen kod (satır 64-65 ve 79-83):
+csharp
+// Satır 64'e eklendi:
+var redisPassword = builder.Configuration["Redis:Password"];
+// Satır 79-83'e eklendi:
+// Add password if configured
+if (!string.IsNullOrEmpty(redisPassword))
+{
+    config.Password = redisPassword;
+}
+2. Collector Program.cs'e eklenen kod (satır 27 ve 54-58):
+csharp
+// Satır 27'ye eklendi:
+var redisPassword = configuration["Redis:Password"];
+// Satır 54-58'e eklendi:
+// Add password if configured
+if (!string.IsNullOrEmpty(redisPassword))
+{
+    redisConfig.Password = redisPassword;
+}
