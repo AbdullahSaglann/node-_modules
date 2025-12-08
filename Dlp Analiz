@@ -112,3 +112,28 @@ if (!string.IsNullOrEmpty(redisPassword))
 {
     redisConfig.Password = redisPassword;
 }
+
+
+
+
+
+
+
+
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP API settings are not configured. Please configure via Settings page in the dashboard.
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Failed to get access token from Forcepoint DLP API
+      System.InvalidOperationException: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Failed to fetch incidents from Forcepoint DLP API
+      System.InvalidOperationException: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 146
+fail: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Failed to collect incidents from Forcepoint DLP API. Will retry on next interval. Error: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+      System.InvalidOperationException: DLP API settings are not configured. Please configure DLP Manager IP, Username, and Password via Settings page in the dashboard.
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 146
+         at DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService.CollectIncidentsAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\CollectorBackgroundService.cs:line 68
