@@ -80,3 +80,12 @@ PS C:\Program Files\Redis> .\redis-server.exe
 [24336] 08 Dec 10:02:33.603 # Redis version=5.0.14.1, bits=64, commit=ec77f72d, modified=0, pid=24336, just started
 [24336] 08 Dec 10:02:33.603 # Warning: no config file specified, using the default config. In order to specify a config file use c:\program files\redis\redis-server.exe /path/to/redis.conf
 [24336] 08 Dec 10:02:33.610 # Could not create server TCP listening socket *:6379: bind: An operation was attempted on something that is not a socket.
+ TCP    127.0.0.1:6379         0.0.0.0:0              LISTENING       3476
+  TCP    127.0.0.1:6379         127.0.0.1:53118        ESTABLISHED     3476
+  TCP    127.0.0.1:6379         127.0.0.1:53119        ESTABLISHED     3476
+  TCP    127.0.0.1:6379         127.0.0.1:58241        ESTABLISHED     3476
+  TCP    127.0.0.1:6379         127.0.0.1:58242        ESTABLISHED     3476
+  TCP    127.0.0.1:53118        127.0.0.1:6379         ESTABLISHED     21680
+  TCP    127.0.0.1:53119        127.0.0.1:6379         ESTABLISHED     21680
+  TCP    127.0.0.1:58241        127.0.0.1:6379         ESTABLISHED     17776
+  TCP    127.0.0.1:58242        127.0.0.1:6379         ESTABLISHED     17776
