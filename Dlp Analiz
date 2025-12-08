@@ -175,3 +175,12 @@ fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
 
 
 Test-NetConnection -ComputerName 172.16.245.126 -Port 9443
+
+
+ComputerName     : 172.16.245.126
+RemoteAddress    : 172.16.245.126
+RemotePort       : 9443
+InterfaceAlias   : Ethernet0
+SourceAddress    : 10.13.55.173
+TcpTestSucceeded : True
+
