@@ -106,3 +106,7 @@ info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
       DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=30s, Username=apiuser
 info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
       DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+
+
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
