@@ -260,3 +260,12 @@ try {
 } catch {
     Write-Host "Hata: $_"
 }
+
+fail: DLP.RiskAnalyzer.Analyzer.Services.BehaviorEngineService[0]
+      Error in GenerateAIAnalysisAsync: Local provider - use static explanation
+      System.InvalidOperationException: Local provider - use static explanation
+         at DLP.RiskAnalyzer.Analyzer.Services.BehaviorEngineService.GenerateAIAnalysisAsync(String entityType, String entityId, Dictionary`2 analysisData, AnomalyResults anomalyResults) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Services\BehaviorEngineService.cs:line 523
+warn: DLP.RiskAnalyzer.Analyzer.Services.BehaviorEngineService[0]
+      Failed to generate AI analysis, falling back to static explanation
+      System.InvalidOperationException: Local provider - use static explanation
+         at DLP.RiskAnalyzer.Analyzer.Services.BehaviorEngineService.GenerateAIAnalysisAsync(String entityType, String entityId, Dictionary`2 analysisData, AnomalyResults anomalyResults) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Services\BehaviorEngineService.cs:line 523
