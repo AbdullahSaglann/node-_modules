@@ -137,3 +137,12 @@ fail: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
          at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.GetAccessTokenAsync() in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 67
          at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 146
          at DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService.CollectIncidentsAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\CollectorBackgroundService.cs:line 68
+
+  "DLP": {
+    "ManagerIP": "YOUR_DLP_MANAGER_IP",
+    "ManagerPort": 8443,
+    "Username": "YOUR_DLP_USERNAME",
+    "Password": "YOUR_DLP_PASSWORD",
+    "UseHttps": true,
+    "Timeout": 30
+  },
