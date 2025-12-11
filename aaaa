@@ -180,3 +180,13 @@ $incidentHeaders = @{
 }
 
 Invoke-RestMethod -Uri "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -Method Post -Headers $incidentHeaders -Body $body -TimeoutSec 120
+
+
+Invoke-RestMethod -Uri "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -Method Post -Headers $incidentHeaders -Body $body -TimeoutSec 120
+Invoke-RestMethod : Specified value has invalid CRLF characters.
+Parameter name: value
+At line:18 char:1
++ Invoke-RestMethod -Uri "https://172.16.245.126:9443/dlp/rest/v1/incid ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Invoke-RestMethod], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
