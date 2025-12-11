@@ -125,3 +125,11 @@ $incidentHeaders = @{
 }
 
 Invoke-RestMethod -Uri "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -Method Post -Headers $incidentHeaders -Body $body -SkipCertificateCheck -TimeoutSec 120
+
+
+Invoke-RestMethod : A parameter cannot be found that matches parameter name 'SkipCertificateCheck'.
+At line:7 char:132
++ ... th/access-token" -Method Post -Headers $headers -SkipCertificateCheck
++                                                     ~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Invoke-RestMethod], ParameterBindingException
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.InvokeRestMethodCommand
