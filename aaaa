@@ -34,3 +34,16 @@ curl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
 curl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
 curl: (3) unmatched close brace/bracket in URL position 31:
 12:00:00\,\start\:0,\limit\:10}
+
+
+
+
+
+# Token'ı TEK SATIRDA yaz (satır sonu OLMADAN)
+$token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaWF0IjoxNzY1NDU0MzUzLCJleHAiOjE3NjU0NTUyNTN9.0jPv8tC35c_W1L2-zKvd_C8TkW-jnaWvKUI724oq1tSURUKv9gva-zv5TkaE__N2dHLrmElVQGJfI3aJw-dqiw"
+
+# Body'yi dosyaya yaz
+'{"type":"INCIDENTS","from_date":"11/12/2025 10:00:00","to_date":"11/12/2025 12:00:00","start":0,"limit":10}' | Out-File -FilePath body.json -Encoding ASCII
+
+# curl ile dene
+curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "@body.json" --max-time 120
