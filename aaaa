@@ -1,126 +1,195 @@
-
-# Token'ı değişkene ata (CRLF olmadan)
-$token = "TOKENINI_TEK_SATIRDA_YAZ"
-
-# curl ile dene
-curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "{\"type\":\"INCIDENTS\",\"from_date\":\"11/12/2025 10:00:00\",\"to_date\":\"11/12/2025 12:00:00\",\"start\":0,\"limit\":10}" --max-time 120
-
-
-$token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaWF0IjoxNzY1NDU0MzUzLCJleHAiOjE3NjU0NTUyNTN9.0jPv8tC35c_W1
-L2-zKvd_C8TkW-jnaWvKUI724oq1tSURUKv9gva-zv5TkaE__N2dHLrmElVQGJfI3aJw-dqiw"
-
-# curl ile dene
-curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "{\"type\":\"INCIDENTS\",\"from_date\":\"11/12/2025 10:00:00\",\"to_date\":\"11/12/2025 12:00:00\",\"start\":0,\"limit\":10}" --max-time 120
-
-curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-At line:6 char:1
-+ curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incident ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100   228  100   226  100     2   4466     39 --:--:-- --:--:-- --:--:--  4560
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>400 Bad Request</title>
-</head><body>
-<h1>Bad Request</h1>
-<p>Your browser sent a request that this server could not understand.<br />
-</p>
-</body></html>
-curl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
-curl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
-curl: (3) unmatched close brace/bracket in URL position 31:
-12:00:00\,\start\:0,\limit\:10}
-
-
-
-
-
-# Token'ı TEK SATIRDA yaz (satır sonu OLMADAN)
-$token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaWF0IjoxNzY1NDU0MzUzLCJleHAiOjE3NjU0NTUyNTN9.0jPv8tC35c_W1L2-zKvd_C8TkW-jnaWvKUI724oq1tSURUKv9gva-zv5TkaE__N2dHLrmElVQGJfI3aJw-dqiw"
-
-# Body'yi dosyaya yaz
-'{"type":"INCIDENTS","from_date":"11/12/2025 10:00:00","to_date":"11/12/2025 12:00:00","start":0,"limit":10}' | Out-File -FilePath body.json -Encoding ASCII
-
-# curl ile dene
-curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "@body.json" --max-time 120
-
-
-
-Out-File : Access to the path 'C:\WINDOWS\system32\body.json' is denied.
-At line:5 char:113
-+ ... "start":0,"limit":10}' | Out-File -FilePath body.json -Encoding ASCII
-+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (:) [Out-File], UnauthorizedAccessException
-    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
- 
-curl.exe : curl: Failed to open body.json
-At line:8 char:1
-+ curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incident ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (curl: Failed to open body.json:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-curl: option -d: error encountered when reading a file
-curl: try 'curl --help' for more information
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-PS C:\Users\syadm55576\Desktop> # Token'ı TEK SATIRDA yaz (satır sonu OLMADAN)
-$token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaWF0IjoxNzY1NDU0MzUzLCJleHAiOjE3NjU0NTUyNTN9.0jPv8tC35c_W1L2-zKvd_C8TkW-jnaWvKUI724oq1tSURUKv9gva-zv5TkaE__N2dHLrmElVQGJfI3aJw-dqiw"
-
-# Body'yi dosyaya yaz
-'{"type":"INCIDENTS","from_date":"11/12/2025 10:00:00","to_date":"11/12/2025 12:00:00","start":0,"limit":10}' | Out-File -FilePath body.json -Encoding ASCII
-
-# curl ile dene
-curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "@body.json" --max-time 120
-curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-At line:8 char:1
-+ curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incident ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
- 
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-100  640k    0  640k  100   107  1144k    191 --:--:-- --:--:-- --:--:-- 1146k
-{"incidents":[{"id":334209745,"severity":"MEDIUM","action":"AUTHORIZED","status":"New","source":{"manager":"GÃ
-¶nÃ¼l Ceylan / Kuveyt TÃ¼rk - Antalya Ticari Åžubesi","department":"Antalya Ticari Åžubesi","login_name":"fahr
-ic","email_address":"fahri.celik@kuveytturk.com.tr","business_unit":"Kurum_ici_mail_adresi"},"history":[{"task
-_name":"Detected and recorded incident","admin_name":"system","update_time":"11/12/2025 10:02:20"},{"task_name
-":"Syslog message was sent","admin_name":"system","update_time":"11/12/2025 10:02:20"}],"event_id":"1245699734
-637406797","maximum_matches":5,"transaction_size":1601629,"analyzed_by":"Policy Engine  srvdmz2dlpsg03-esg.ktd
-mz.local","ignored_incidents":false,"event_time":"11/12/2025 10:02:06","incident_time":"11/12/2025 10:02:15","
-channel":"EMAIL","policies":"KT TC Kimlik Verisi; KT PCI/PII-KW Politikasi","partition_index":20250921,"destin
-ation":"HukukDanisma@mutlu.av.tr","detected_by":"Forcepoint Email Security on srvdmz2dlpsg03-esg.ktdmz.local",
-"details":"FW: HASVET VEKALET","released_incident":false,"violation_triggers":[{"classifiers":[{"classifier_na
-me":"Turkey TC Kimlik (Wide) (Script)","number_matches":5}],"policy_name":"KT TC Kimlik Verisi","rule_name":"A
-ll-Mail(Selected)"},{"classifiers":[{"classifier_name":"Turkey TC Kimlik (Wide) (Script)","number_matches":5},
-{"classifier_name":"keyword (Dictionary)","number_matches":2}],"policy_name":"KT PCI/PII-KW Politikasi","rule_
-name":"All-Selected"},{"classifiers":[{"classifier_name":"Turkey TC Kimlik (Wide) (Script)","number_matches":5
-}],"policy_name":"KT TC Kimlik Verisi","rule_name":"TC Kimlik Verisi-Mail"},{"classifiers":[{"classifier_name"
-:"Turkey TC Kimlik (Wide) (Script)","number_matches":5},{"classifier_name":"keyword (Dictionary)","number_matc
-hes":2}],"policy_name":"KT PCI/PII-KW Politikasi","rule_name":"KT PCI/PII-KW-Mail"}],"file_name":"Ä°BRAHÄ°M GÃ
-œRKAN VEKALET.pdf - 1.09 MB"},{"id":334210391,"severity":"MEDIUM","action":"AUTHORIZED","status":"New","source
-":{"manager":"Hasan Basri Atalay / Kuveyt TÃ¼rk - Bosna BulvarÄ± Åžubesi","department":"Bosna BulvarÄ± Åžubesi
-","login_name":"KUVEYTTURK\\spamuk","host_name":"34-330-W02.kuveytturk.local","business_unit":"Kurum_ici_mail_
-adresi"},"history":[{"task_name":"Detected and recorded incident","admin_name":"system","update_time":"11/12/2
-025 10:01:40"},{"task_name":"Syslog message was sent","admin_name":"system","update_time":"11/12/2025 10:01:40
-"}],"event_id":"5063667813755210553","maximum_matches":8,"transaction_size":2892,"analyzed_by":"Policy Engine 
- Srvsecdlpdc03.kuveytturk.local","ignored_incidents":false,"event_time":"11/12/2025 10:01:33","incident_time":
-"11/12/2025 10:01:33","channel":"ENDPOINT_PRINTING","policies":"KT Hesap Ekstresi","partition_index":20250921,
-"destination":"\\\\srvsube-330\\34-330-P01","detected_by":"Endpoint Agent","details":"EndPoint Operation"
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DlpConfigurationSyncService
+.cs(134,61): warning CS0168: The variable 'ex' is declared but never used [C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-
+csharp-main\DLP.RiskAnalyzer.Collector\DLP.RiskAnalyzer.Collector.csproj]
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      Initial configuration loaded from appsettings.json: 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLPCollectorService initialized for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      DLP Collector Service started
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Starting incident collection from Forcepoint DLP REST API v1...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Access token obtained successfully, expires at 12/11/2025 12:41:59
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Deserialized as DLPIncidentResponse: 331 incidents
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Fetched 331 incidents from Forcepoint DLP API (Date range: 11/12/2025 10:27:59 to 11/12/2025 12:27:59, Page: 1, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Fetched 331 incidents from Forcepoint DLP API (Page: 1, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Deserialized as DLPIncidentResponse: 331 incidents
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Fetched 331 incidents from Forcepoint DLP API (Date range: 11/12/2025 10:27:59 to 11/12/2025 12:27:59, Page: 2, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Fetched 331 incidents from Forcepoint DLP API (Page: 2, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (initial load): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Subscribed to DLP config updates via Redis channel dlp:config:updated
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Failed to fetch incidents from Forcepoint DLP API
+      System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+       ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+       ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 176
+warn: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      DLP API request timeout. Will retry on next interval.
+      System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+       ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+       ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 176
+         at DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService.CollectIncidentsAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\CollectorBackgroundService.cs:line 96
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Collector service is being stopped
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      DLP Collector Service stopped
+PS C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector> ^C
+PS C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector>
+PS C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector>
+PS C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector> dotnet run
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      Initial configuration loaded from appsettings.json: 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLPCollectorService initialized for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      DLP Collector Service started
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Starting incident collection from Forcepoint DLP REST API v1...
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Access token obtained successfully, expires at 12/11/2025 12:43:05
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Deserialized as DLPIncidentResponse: 330 incidents
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Date range: 11/12/2025 10:29:05 to 11/12/2025 12:29:05, Page: 1, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Page: 1, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Deserialized as DLPIncidentResponse: 330 incidents
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Date range: 11/12/2025 10:29:05 to 11/12/2025 12:29:05, Page: 2, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Page: 2, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Deserialized as DLPIncidentResponse: 330 incidents
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Date range: 11/12/2025 10:29:05 to 11/12/2025 12:29:05, Page: 3, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Page: 3, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Deserialized as DLPIncidentResponse: 330 incidents
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Date range: 11/12/2025 10:29:05 to 11/12/2025 12:29:05, Page: 4, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Fetched 330 incidents from Forcepoint DLP API (Page: 4, PageSize: 25)
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (initial load): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Subscribed to DLP config updates via Redis channel dlp:config:updated
+fail: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Failed to fetch incidents from Forcepoint DLP API
+      System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+       ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+       ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 176
+warn: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      DLP API request timeout. Will retry on next interval.
+      System.Threading.Tasks.TaskCanceledException: The operation was canceled.
+       ---> System.IO.IOException: Unable to read data from the transport connection: The I/O operation has been aborted because of either a thread exit or an application request..
+       ---> System.Net.Sockets.SocketException (995): The I/O operation has been aborted because of either a thread exit or an application request.
+         --- End of inner exception stack trace ---
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+         at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource<System.Int32>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.EnsureFullTlsFrameAsync[TIOAdapter](CancellationToken cancellationToken, Int32 estimatedSize)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Security.SslStream.ReadAsyncInternal[TIOAdapter](Memory`1 buffer, CancellationToken cancellationToken)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         --- End of inner exception stack trace ---
+         at System.Net.Http.HttpConnection.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at DLP.RiskAnalyzer.Collector.Services.DLPCollectorService.FetchIncidentsAsync(DateTime startTime, DateTime endTime, Int32 page, Int32 pageSize) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DLPCollectorService.cs:line 176
+         at DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService.CollectIncidentsAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\CollectorBackgroundService.cs:line 96
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Redis broadcast: 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
