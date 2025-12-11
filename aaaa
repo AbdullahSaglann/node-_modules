@@ -91,3 +91,37 @@ info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
       DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=300s, Username=apiuser
 info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
       DLP Collector HTTP client reconfigured for 172.16.245.126:9443
+
+
+
+# 1. Önce token al
+$headers = @{
+    "username" = "apiuser"
+    "password" = "SIFRENI_YAZ"
+}
+
+$tokenResponse = Invoke-RestMethod -Uri "https://172.16.245.126:9443/dlp/rest/v1/auth/access-token" -Method Post -Headers $headers -SkipCertificateCheck
+
+Write-Host "Token: $($tokenResponse.access_token)"
+
+
+
+
+
+# 2. Token'ı kullanarak incident çek (küçük limit ile)
+$token = "YUKARIDAKI_TOKEN"
+
+$body = @{
+    type = "INCIDENTS"
+    from_date = "11/12/2025 10:00:00"
+    to_date = "11/12/2025 12:00:00"
+    start = 0
+    limit = 10
+} | ConvertTo-Json
+
+$incidentHeaders = @{
+    "Authorization" = "Bearer $token"
+    "Content-Type" = "application/json"
+}
+
+Invoke-RestMethod -Uri "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -Method Post -Headers $incidentHeaders -Body $body -SkipCertificateCheck -TimeoutSec 120
