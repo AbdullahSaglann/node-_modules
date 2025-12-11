@@ -47,3 +47,23 @@ $token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaWF0IjoxNzY1NDU0MzUzLCJle
 
 # curl ile dene
 curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "@body.json" --max-time 120
+
+
+
+Out-File : Access to the path 'C:\WINDOWS\system32\body.json' is denied.
+At line:5 char:113
++ ... "start":0,"limit":10}' | Out-File -FilePath body.json -Encoding ASCII
++                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], UnauthorizedAccessException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+ 
+curl.exe : curl: Failed to open body.json
+At line:8 char:1
++ curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incident ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (curl: Failed to open body.json:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+curl: option -d: error encountered when reading a file
+curl: try 'curl --help' for more information
+
