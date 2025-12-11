@@ -4,3 +4,33 @@ $token = "TOKENINI_TEK_SATIRDA_YAZ"
 
 # curl ile dene
 curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "{\"type\":\"INCIDENTS\",\"from_date\":\"11/12/2025 10:00:00\",\"to_date\":\"11/12/2025 12:00:00\",\"start\":0,\"limit\":10}" --max-time 120
+
+
+$token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhcGl1c2VyIiwiaWF0IjoxNzY1NDU0MzUzLCJleHAiOjE3NjU0NTUyNTN9.0jPv8tC35c_W1
+L2-zKvd_C8TkW-jnaWvKUI724oq1tSURUKv9gva-zv5TkaE__N2dHLrmElVQGJfI3aJw-dqiw"
+
+# curl ile dene
+curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incidents/" -H "Authorization: Bearer $token" -H "Content-Type: application/json" -d "{\"type\":\"INCIDENTS\",\"from_date\":\"11/12/2025 10:00:00\",\"to_date\":\"11/12/2025 12:00:00\",\"start\":0,\"limit\":10}" --max-time 120
+
+curl.exe :   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+At line:6 char:1
++ curl.exe -k -X POST "https://172.16.245.126:9443/dlp/rest/v1/incident ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  % Total    % ...  Time  Current:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   228  100   226  100     2   4466     39 --:--:-- --:--:-- --:--:--  4560
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>400 Bad Request</title>
+</head><body>
+<h1>Bad Request</h1>
+<p>Your browser sent a request that this server could not understand.<br />
+</p>
+</body></html>
+curl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
+curl: (3) URL rejected: Port number was not a decimal number between 0 and 65535
+curl: (3) unmatched close brace/bracket in URL position 31:
+12:00:00\,\start\:0,\limit\:10}
