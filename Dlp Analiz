@@ -17,3 +17,7 @@ crit: Microsoft.Extensions.Hosting.Internal.Host[10]
          --- End of inner exception stack trace ---
          at DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService.SubscribeToUpdatesAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DlpConfigurationSyncService.cs:line 82
          at DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DlpConfigurationSyncService.cs:line 36
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Program.cs(27,23): error CS0103: The
+ name 'builder' does not exist in the current context [C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.Risk
+Analyzer.Collector\DLP.RiskAnalyzer.Collector.csproj]
