@@ -21,3 +21,87 @@ crit: Microsoft.Extensions.Hosting.Internal.Host[10]
 C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Program.cs(27,23): error CS0103: The
  name 'builder' does not exist in the current context [C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.Risk
 Analyzer.Collector\DLP.RiskAnalyzer.Collector.csproj]
+
+
+
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(5,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(6,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(7,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(8,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(9,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(10,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(11,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(12,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(13,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(14,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(15,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(16,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+
+Build FAILED.
+
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\DlpConfigurationSyncService
+.cs(134,61): warning CS0168: The variable 'ex' is declared but never used [C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-
+csharp-main\DLP.RiskAnalyzer.Collector\DLP.RiskAnalyzer.Collector.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(5,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(6,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(7,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(8,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(9,1): error CS1529: A usin
+g clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp-
+risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(10,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(11,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(12,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(13,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(14,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(15,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\Program.cs(16,1): error CS1529: A usi
+ng clause must precede all other elements defined in the namespace except extern alias declarations [C:\Users\syadm55576\Desktop\dlp
+-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Analyzer\DLP.RiskAnalyzer.Analyzer.csproj]
+    1 Warning(s)
+    12 Error(s)
