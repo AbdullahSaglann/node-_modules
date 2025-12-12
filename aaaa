@@ -69,3 +69,134 @@ info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
          at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
          at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
          at DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient.FetchConfigAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\AnalyzerConfigClient.cs:line 37
+
+
+
+      WHERE id = @p5138 AND timestamp = @p5139;
+      UPDATE incidents SET action = @p5140, channel = @p5141, data_sensitivity = @p5142, data_type = @p5143, department = @p5144, destination = @p5145, email_address = @p5146, file_name = @p5147, "IOBs" = @p5148, login_name = @p5149, policy = @p5150, "RecommendedAction" = @p5151, repeat_count = @p5152, "RiskLevel" = @p5153, risk_score = @p5154, severity = @p5155, user_email = @p5156, violation_triggers = @p5157
+      WHERE id = @p5158 AND timestamp = @p5159;
+      UPDATE incidents SET action = @p5160, channel = @p5161, data_sensitivity = @p5162, data_type = @p5163, department = @p5164, destination = @p5165, email_address = @p5166, file_name = @p5167, "IOBs" = @p5168, login_name = @p5169, policy = @p5170, "RecommendedAction" = @p5171, repeat_count = @p5172, "RiskLevel" = @p5173, risk_score = @p5174, severity = @p5175, user_email = @p5176, violation_triggers = @p5177
+      WHERE id = @p5178 AND timestamp = @p5179;
+      UPDATE incidents SET action = @p5180, channel = @p5181, data_sensitivity = @p5182, data_type = @p5183, department = @p5184, destination = @p5185, email_address = @p5186, file_name = @p5187, "IOBs" = @p5188, login_name = @p5189, policy = @p5190, "RecommendedAction" = @p5191, repeat_count = @p5192, "RiskLevel" = @p5193, risk_score = @p5194, severity = @p5195, user_email = @p5196, violation_triggers = @p5197
+      WHERE id = @p5198 AND timestamp = @p5199;
+      UPDATE incidents SET action = @p5200, channel = @p5201, data_sensitivity = @p5202, data_type = @p5203, department = @p5204, destination = @p5205, email_address = @p5206, file_name = @p5207, "IOBs" = @p5208, login_name = @p5209, policy = @p5210, "RecommendedAction" = @p5211, repeat_count = @p5212, "RiskLevel" = @p5213, risk_score = @p5214, severity = @p5215, user_email = @p5216, violation_triggers = @p5217
+      WHERE id = @p5218 AND timestamp = @p5219;
+      UPDATE incidents SET action = @p5220, channel = @p5221, data_sensitivity = @p5222, data_type = @p5223, department = @p5224, destination = @p5225, email_address = @p5226, file_name = @p5227, "IOBs" = @p5228, login_name = @p5229, policy = @p5230, "RecommendedAction" = @p5231, repeat_count = @p5232, "RiskLevel" = @p5233, risk_score = @p5234, severity = @p5235, user_email = @p5236, violation_triggers = @p5237
+      WHERE id = @p5238 AND timestamp = @p5239;
+      UPDATE incidents SET action = @p5240, channel = @p5241, data_sensitivity = @p5242, data_type = @p5243, department = @p5244, destination = @p5245, email_address = @p5246, file_name = @p5247, "IOBs" = @p5248, login_name = @p5249, policy = @p5250, "RecommendedAction" = @p5251, repeat_count = @p5252, "RiskLevel" = @p5253, risk_score = @p5254, severity = @p5255, user_email = @p5256, violation_triggers = @p5257
+      WHERE id = @p5258 AND timestamp = @p5259;
+      UPDATE incidents SET action = @p5260, channel = @p5261, data_sensitivity = @p5262, data_type = @p5263, department = @p5264, destination = @p5265, email_address = @p5266, file_name = @p5267, "IOBs" = @p5268, login_name = @p5269, policy = @p5270, "RecommendedAction" = @p5271, repeat_count = @p5272, "RiskLevel" = @p5273, risk_score = @p5274, severity = @p5275, user_email = @p5276, violation_triggers = @p5277
+      WHERE id = @p5278 AND timestamp = @p5279;
+      UPDATE incidents SET action = @p5280, channel = @p5281, data_sensitivity = @p5282, data_type = @p5283, department = @p5284, destination = @p5285, email_address = @p5286, file_name = @p5287, "IOBs" = @p5288, login_name = @p5289, policy = @p5290, "RecommendedAction" = @p5291, repeat_count = @p5292, "RiskLevel" = @p5293, risk_score = @p5294, severity = @p5295, user_email = @p5296, violation_triggers = @p5297
+      WHERE id = @p5298 AND timestamp = @p5299;
+      UPDATE incidents SET action = @p5300, channel = @p5301, data_sensitivity = @p5302, data_type = @p5303, department = @p5304, destination = @p5305, email_address = @p5306, file_name = @p5307, "IOBs" = @p5308, login_name = @p5309, policy = @p5310, "RecommendedAction" = @p5311, repeat_count = @p5312, "RiskLevel" = @p5313, risk_score = @p5314, severity = @p5315, user_email = @p5316, violation_triggers = @p5317
+      WHERE id = @p5318 AND timestamp = @p5319;
+      UPDATE incidents SET action = @p5320, channel = @p5321, data_sensitivity = @p5322, data_type = @p5323, department = @p5324, destination = @p5325, email_address = @p5326, file_name = @p5327, "IOBs" = @p5328, login_name = @p5329, policy = @p5330, "RecommendedAction" = @p5331, repeat_count = @p5332, "RiskLevel" = @p5333, risk_score = @p5334, severity = @p5335, user_email = @p5336, violation_triggers = @p5337
+      WHERE id = @p5338 AND timestamp = @p5339;
+      UPDATE incidents SET action = @p5340, channel = @p5341, data_sensitivity = @p5342, data_type = @p5343, department = @p5344, destination = @p5345, email_address = @p5346, file_name = @p5347, "IOBs" = @p5348, login_name = @p5349, policy = @p5350, "RecommendedAction" = @p5351, repeat_count = @p5352, "RiskLevel" = @p5353, risk_score = @p5354, severity = @p5355, user_email = @p5356, violation_triggers = @p5357
+      WHERE id = @p5358 AND timestamp = @p5359;
+      UPDATE incidents SET action = @p5360, channel = @p5361, data_sensitivity = @p5362, data_type = @p5363, department = @p5364, destination = @p5365, email_address = @p5366, file_name = @p5367, "IOBs" = @p5368, login_name = @p5369, policy = @p5370, "RecommendedAction" = @p5371, repeat_count = @p5372, "RiskLevel" = @p5373, risk_score = @p5374, severity = @p5375, user_email = @p5376, violation_triggers = @p5377
+      WHERE id = @p5378 AND timestamp = @p5379;
+      UPDATE incidents SET action = @p5380, channel = @p5381, data_sensitivity = @p5382, data_type = @p5383, department = @p5384, destination = @p5385, email_address = @p5386, file_name = @p5387, "IOBs" = @p5388, login_name = @p5389, policy = @p5390, "RecommendedAction" = @p5391, repeat_count = @p5392, "RiskLevel" = @p5393, risk_score = @p5394, severity = @p5395, user_email = @p5396, violation_triggers = @p5397
+      WHERE id = @p5398 AND timestamp = @p5399;
+      UPDATE incidents SET action = @p5400, channel = @p5401, data_sensitivity = @p5402, data_type = @p5403, department = @p5404, destination = @p5405, email_address = @p5406, file_name = @p5407, "IOBs" = @p5408, login_name = @p5409, policy = @p5410, "RecommendedAction" = @p5411, repeat_count = @p5412, "RiskLevel" = @p5413, risk_score = @p5414, severity = @p5415, user_email = @p5416, violation_triggers = @p5417
+      WHERE id = @p5418 AND timestamp = @p5419;
+      UPDATE incidents SET action = @p5420, channel = @p5421, data_sensitivity = @p5422, data_type = @p5423, department = @p5424, destination = @p5425, email_address = @p5426, file_name = @p5427, "IOBs" = @p5428, login_name = @p5429, policy = @p5430, "RecommendedAction" = @p5431, repeat_count = @p5432, "RiskLevel" = @p5433, risk_score = @p5434, severity = @p5435, user_email = @p5436, violation_triggers = @p5437
+      WHERE id = @p5438 AND timestamp = @p5439;
+      UPDATE incidents SET action = @p5440, channel = @p5441, data_sensitivity = @p5442, data_type = @p5443, department = @p5444, destination = @p5445, email_address = @p5446, file_name = @p5447, "IOBs" = @p5448, login_name = @p5449, policy = @p5450, "RecommendedAction" = @p5451, repeat_count = @p5452, "RiskLevel" = @p5453, risk_score = @p5454, severity = @p5455, user_email = @p5456, violation_triggers = @p5457
+      WHERE id = @p5458 AND timestamp = @p5459;
+      UPDATE incidents SET action = @p5460, channel = @p5461, data_sensitivity = @p5462, data_type = @p5463, department = @p5464, destination = @p5465, email_address = @p5466, file_name = @p5467, "IOBs" = @p5468, login_name = @p5469, policy = @p5470, "RecommendedAction" = @p5471, repeat_count = @p5472, "RiskLevel" = @p5473, risk_score = @p5474, severity = @p5475, user_email = @p5476, violation_triggers = @p5477
+      WHERE id = @p5478 AND timestamp = @p5479;
+      UPDATE incidents SET action = @p5480, channel = @p5481, data_sensitivity = @p5482, data_type = @p5483, department = @p5484, destination = @p5485, email_address = @p5486, file_name = @p5487, "IOBs" = @p5488, login_name = @p5489, policy = @p5490, "RecommendedAction" = @p5491, repeat_count = @p5492, "RiskLevel" = @p5493, risk_score = @p5494, severity = @p5495, user_email = @p5496, violation_triggers = @p5497
+      WHERE id = @p5498 AND timestamp = @p5499;
+      UPDATE incidents SET action = @p5500, channel = @p5501, data_sensitivity = @p5502, data_type = @p5503, department = @p5504, destination = @p5505, email_address = @p5506, file_name = @p5507, "IOBs" = @p5508, login_name = @p5509, policy = @p5510, "RecommendedAction" = @p5511, repeat_count = @p5512, "RiskLevel" = @p5513, risk_score = @p5514, severity = @p5515, user_email = @p5516, violation_triggers = @p5517
+      WHERE id = @p5518 AND timestamp = @p5519;
+      UPDATE incidents SET action = @p5520, channel = @p5521, data_sensitivity = @p5522, data_type = @p5523, department = @p5524, destination = @p5525, email_address = @p5526, file_name = @p5527, "IOBs" = @p5528, login_name = @p5529, policy = @p5530, "RecommendedAction" = @p5531, repeat_count = @p5532, "RiskLevel" = @p5533, risk_score = @p5534, severity = @p5535, user_email = @p5536, violation_triggers = @p5537
+      WHERE id = @p5538 AND timestamp = @p5539;
+      UPDATE incidents SET action = @p5540, channel = @p5541, data_sensitivity = @p5542, data_type = @p5543, department = @p5544, destination = @p5545, email_address = @p5546, file_name = @p5547, "IOBs" = @p5548, login_name = @p5549, policy = @p5550, "RecommendedAction" = @p5551, repeat_count = @p5552, "RiskLevel" = @p5553, risk_score = @p5554, severity = @p5555, user_email = @p5556, violation_triggers = @p5557
+      WHERE id = @p5558 AND timestamp = @p5559;
+      INSERT INTO incidents (id, timestamp, action, channel, data_type, department, destination, email_address, file_name, "IOBs", login_name, policy, "RecommendedAction", "RiskLevel", risk_score, severity, user_email, violation_triggers)
+      VALUES (@p5560, @p5561, @p5562, @p5563, @p5564, @p5565, @p5566, @p5567, @p5568, @p5569, @p5570, @p5571, @p5572, @p5573, @p5574, @p5575, @p5576, @p5577)
+      RETURNING data_sensitivity, repeat_count;
+fail: Microsoft.EntityFrameworkCore.Update[10000]
+      An exception occurred in the database while saving changes for context type 'DLP.RiskAnalyzer.Analyzer.Data.AnalyzerDbContext'.
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+       ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_incidents"
+
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+        Exception data:
+          Severity: ERROR
+          SqlState: 23505
+          MessageText: duplicate key value violates unique constraint "PK_incidents"
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+          SchemaName: public
+          TableName: incidents
+          ConstraintName: PK_incidents
+          File: nbtinsert.c
+          Line: 673
+          Routine: _bt_check_unique
+         --- End of inner exception stack trace ---
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+      Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+       ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_incidents"
+
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+         at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+         at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+         at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+        Exception data:
+          Severity: ERROR
+          SqlState: 23505
+          MessageText: duplicate key value violates unique constraint "PK_incidents"
+          Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+          SchemaName: public
+          TableName: incidents
+          ConstraintName: PK_incidents
+          File: nbtinsert.c
+          Line: 673
+          Routine: _bt_check_unique
+         --- End of inner exception stack trace ---
+         at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+      --- End of stack trace from previous location ---
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+         at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+warn: DLP.RiskAnalyzer.Analyzer.Services.AnalyzerBackgroundService[0]
+      Database connection failed. Will retry in 30 seconds. Error: 23505: duplicate key value violates unique constraint "PK_incidents"
+
+      DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
