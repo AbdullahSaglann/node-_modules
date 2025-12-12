@@ -155,12 +155,30 @@ fail: Microsoft.EntityFrameworkCore.Update[10000]
 
 
 
+CREATE TABLE IF NOT EXISTS incidents (
+    id INTEGER NOT NULL,
+    timestamp TIMESTAMP NOT NULL,
+    user_email VARCHAR(255) NOT NULL,
+    department VARCHAR(255),
+    severity INTEGER NOT NULL,
+    data_type VARCHAR(100),
+    policy VARCHAR(255),
+    channel VARCHAR(100),
+    risk_score INTEGER,
+    repeat_count INTEGER DEFAULT 0,
+    data_sensitivity INTEGER DEFAULT 0,
+    action VARCHAR(50),
+    destination VARCHAR(500),
+    file_name VARCHAR(500),
+    login_name VARCHAR(255),
+    email_address VARCHAR(255),
+    violation_triggers TEXT,
+    PRIMARY KEY (id, timestamp)
+);
 
-ALTER TABLE incidents ADD COLUMN IF NOT EXISTS action VARCHAR(50);
-ALTER TABLE incidents ADD COLUMN IF NOT EXISTS destination VARCHAR(500);
-ALTER TABLE incidents ADD COLUMN IF NOT EXISTS file_name VARCHAR(500);
-ALTER TABLE incidents ADD COLUMN IF NOT EXISTS login_name VARCHAR(255);
-ALTER TABLE incidents ADD COLUMN IF NOT EXISTS email_address VARCHAR(255);
-ALTER TABLE incidents ADD COLUMN IF NOT EXISTS violation_triggers TEXT;
--- Action için index ekle (opsiyonel ama performans için önerilen)
+-- Indexler
+CREATE INDEX IF NOT EXISTS idx_incidents_user_email ON incidents(user_email);
+CREATE INDEX IF NOT EXISTS idx_incidents_department ON incidents(department);
+CREATE INDEX IF NOT EXISTS idx_incidents_timestamp ON incidents(timestamp);
+CREATE INDEX IF NOT EXISTS idx_incidents_risk_score ON incidents(risk_score);
 CREATE INDEX IF NOT EXISTS idx_incidents_action ON incidents(action);
