@@ -424,3 +424,16 @@ fail: Microsoft.EntityFrameworkCore.Update[10000]
          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
 info: DLP.RiskAnalyzer.Analyzer.Services.DatabaseService[0]
       Processed Redis stream: 0 saved, 100 duplicates skipped, 0 errors
+
+
+
+
+
+
+-- Mevcut tabloya yeni kolonları ekle
+ALTER TABLE incidents ADD COLUMN action VARCHAR(50);
+ALTER TABLE incidents ADD COLUMN destination VARCHAR(500);
+ALTER TABLE incidents ADD COLUMN file_name VARCHAR(500);
+ALTER TABLE incidents ADD COLUMN login_name VARCHAR(255);
+ALTER TABLE incidents ADD COLUMN email_address VARCHAR(255);
+ALTER TABLE incidents ADD COLUMN violation_triggers TEXT;
