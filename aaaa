@@ -21,3 +21,11 @@ WHERE action IS NOT NULL OR destination IS NOT NULL OR file_name IS NOT NULL
 LIMIT 100;
 
 SELECT action, COUNT(*) as count FROM incidents GROUP BY action ORDER BY count DESC;
+
+
+
+[null]	538
+"AUTHORIZED"	206
+"BLOCKED"	101
+"QUARANTINED"	49
+"RELEASED"	2
