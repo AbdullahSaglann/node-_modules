@@ -1,0 +1,76 @@
+Yeni eklenecek özellikler :
+
+      {
+        "id": 334113061,
+        "severity": "MEDIUM",
+        "action": "AUTHORIZED",
+        "status": "New",
+        "source": {
+          "manager": "Ufuk Yıldırım / Kuveyt Türk - Tuzla İçmeler Şubesi",
+          "department": "Tuzla İçmeler Şubesi",
+          "login_name": "KUVEYTTURK\\nyigit",
+          "host_name": "34-261-W02.kuveytturk.local",
+          "business_unit": "Kurum_ici_mail_adresi"
+        },
+        "history": [
+          {
+            "task_name": "Detected and recorded incident",
+            "admin_name": "system",
+            "update_time": "10/12/2025 12:25:30"
+          },
+          {
+            "task_name": "Syslog message was sent",
+            "admin_name": "system",
+            "update_time": "10/12/2025 12:25:30"
+          }
+        ],
+        "event_id": "4761843907156413449",
+        "maximum_matches": 9,
+        "transaction_size": 273047,
+        "analyzed_by": "Policy Engine  srvsecdlpdc01.kuveytturk.local",
+        "ignored_incidents": false,
+        "event_time": "10/12/2025 12:25:24",
+        "incident_time": "10/12/2025 12:25:26",
+        "channel": "ENDPOINT_PRINTING",
+        "policies": "KT Hesap Ekstresi",
+        "partition_index": 20250921,
+        "destination": "\\\\srvsube-261\\MFP-KURUMSAL",
+        "detected_by": "Endpoint Agent",
+        "details": "EndPoint Operation",
+        "released_incident": false,
+        "endpoint_type": "DESKTOP",
+        "violation_triggers": [
+          {
+            "classifiers": [
+              {
+                "classifier_name": "HEkstre_HesapOzeti (Dictionary)",
+                "number_matches": 9
+              }
+            ],
+            "policy_name": "KT Hesap Ekstresi",
+            "rule_name": "Selected-Printing(All)"
+          },
+          {
+            "classifiers": [
+              {
+                "classifier_name": "HEkstre_HesapOzeti (Dictionary)",
+                "number_matches": 9
+              }
+            ],
+            "policy_name": "KT Hesap Ekstresi",
+            "rule_name": "Hesap Ekstresi-Others"
+          }
+        ],
+        "file_name": "Musterino_91521636_Ekno_101_20251210122447.pdf - 266.65 KB"
+      }
+
+
+
+
+
+burada biz tüm değerleri çekiyoruz ama bazılarını kullanmıyoruz programda şimdi buralara eklemeler yapacağız. Eklemeler :
+
+Oluşturulan incidentların kaçı blok kaçı karantina kaçı authorized ? bunun bir analizini ekleyelim istiyorum.
+Destination kısmında buradaki destination alanını kullanacağız. Zaten dashborad sayfamızda bu channel ve destination kısmı var. Destination verisini oraya ekleyeceğiz.
+Sonrasında buradaki destination,source,file_name,login_name,email_name(varsa), bunları investigation kısmında üstüne tıkladığımız kullanıcı için açılan alert sayfasında alertlerine tıklayınca gelen alert details içindeki details bilgisinin altına ekleyelim sağ tarafta.
+
