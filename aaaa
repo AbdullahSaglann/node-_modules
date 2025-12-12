@@ -2,3 +2,9 @@ info: DLP.RiskAnalyzer.Analyzer.Services.DatabaseService[0]
       Processed Redis stream: 8 saved, 91 duplicates skipped, 1 errors
 info: DLP.RiskAnalyzer.Analyzer.Services.AnalyzerBackgroundService[0]
       Processed 8 incidents from Redis stream and calculated risk scores
+
+
+SELECT user_email, timestamp, policy, COUNT(*) 
+FROM incidents 
+GROUP BY user_email, timestamp, policy 
+HAVING COUNT(*) > 1;
