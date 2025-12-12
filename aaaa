@@ -19,3 +19,5 @@ SELECT id, action, destination, file_name, login_name, email_address
 FROM incidents 
 WHERE action IS NOT NULL OR destination IS NOT NULL OR file_name IS NOT NULL
 LIMIT 100;
+
+SELECT action, COUNT(*) as count FROM incidents GROUP BY action ORDER BY count DESC;
