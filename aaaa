@@ -1,13 +1,104 @@
-      // Debug: log first incident to check riskScore value
-      if (incidents.length > 0) {
-        console.log('First incident from API:', incidents[0])
-        console.log('riskScore:', incidents[0].riskScore, 'severity:', incidents[0].severity)
-      }
+{
+  "success": true,
+  "message": "Incidents fetched successfully",
+  "timeRange": {
+    "fromDate": "10/12/2025 12:24:44",
+    "toDate": "11/12/2025 12:24:44",
+    "startTime": "2025-12-10T12:24:44.2506299Z",
+    "endTime": "2025-12-11T12:24:44.2506299Z",
+    "hours": 24
+  },
+  "incidents": {
+    "incidents": [
+      {
+        "id": 334112968,
+        "severity": "MEDIUM",
+        "action": "AUTHORIZED",
+        "status": "New",
+        "source": {
+          "manager": "Burak Koç / Kuveyt Türk - Atakent Şubesi",
+          "department": "Atakent Şubesi",
+          "login_name": "KUVEYTTURK\\yakbey",
+          "host_name": "34-321-W02.kuveytturk.local",
+          "business_unit": "Kurum_ici_mail_adresi"
+        },
+        "history": [
+          {
+            "task_name": "Detected and recorded incident",
+            "admin_name": "system",
+            "update_time": "10/12/2025 12:25:10"
+          },
+          {
+            "task_name": "Syslog message was sent",
+            "admin_name": "system",
+            "update_time": "10/12/2025 12:25:10"
+          }
+        ],
+        "event_id": "4757864359869145217",
+        "maximum_matches": 9,
+        "transaction_size": 270168,
+        "analyzed_by": "Policy Engine  srvsecdlpdc01.kuveytturk.local",
+        "ignored_incidents": false,
+        "event_time": "10/12/2025 12:25:03",
+        "incident_time": "10/12/2025 12:25:09",
+        "channel": "ENDPOINT_PRINTING",
+        "policies": "KT Hesap Ekstresi",
+        "partition_index": 20250921,
+        "destination": "\\\\srvsube-321\\MFP-OPERASYON",
+        "detected_by": "Endpoint Agent",
+        "details": "EndPoint Operation",
+        "released_incident": false,
+        "endpoint_type": "DESKTOP",
+        "violation_triggers": [
+          {
+            "classifiers": [
+              {
+                "classifier_name": "HEkstre_HesapOzeti (Dictionary)",
+                "number_matches": 9
+              }
+            ],
+            "policy_name": "KT Hesap Ekstresi",
+            "rule_name": "Selected-Printing(All)"
+          },
+          {
+            "classifiers": [
+              {
+                "classifier_name": "HEkstre_HesapOzeti (Dictionary)",
+                "number_matches": 9
+              }
+            ],
+            "policy_name": "KT Hesap Ekstresi",
+            "rule_name": "Hesap Ekstresi-Others"
+          }
+        ],
+        "file_name": "hüseyin1.pdf - 263.84 KB"
+      },
 
-      // Calculate risk score from severity if not provided
-      const calculateRiskScore = (incident: any): number => {
-        if (incident.riskScore != null) return incident.riskScore
-        // Fallback: calculate from severity (1-5 scale to 0-100)
-        const severity = incident.severity || 1
-        return Math.min(100, severity * 20)
-      }
+
+
+
+
+
+
+  {
+    "id": 0,
+    "userEmail": "ciceke",
+    "department": "Vişne Caddesi Şubesi",
+    "severity": 1,
+    "dataType": null,
+    "timestamp": "2025-12-12T11:06:16+03:00",
+    "policy": "KT PCI/PII-KW Politikasi",
+    "channel": "EMAIL",
+    "riskScore": null,
+    "repeatCount": 0,
+    "dataSensitivity": 0,
+    "action": "QUARANTINED",
+    "destination": "voi.eu16@hotmail.com; sezaiozgedik@gmail.com",
+    "fileName": "BEs.pdf - 2.07 MB; image002.png - 378 B; image003.png - 507 B; image004.png - 469 B; image005.png - 11.99 KB; image006.png - 10.38 KB; image007.png - 420 B; image008.png - 450 B; image009.png - 1.21 KB; image010.png - 467 B; image011.png - 367 B; image012.png - 366 B; image013.png - 382 B; image014.jpg - 408 B; image001.png - 372 B",
+    "loginName": "ciceke",
+    "emailAddress": null,
+    "violationTriggers": "[{\"PolicyName\":\"KT PCI/PII-KW Politikasi\",\"RuleName\":\"KT PCI/PII-KW-Mail\",\"Classifiers\":[{\"ClassifierName\":\"IBAN Turkish (Wide) (Script)\",\"NumberMatches\":2},{\"ClassifierName\":\"cokgizlikv (Dictionary)\",\"NumberMatches\":1}]}]",
+    "riskLevel": "Low",
+    "recommendedAction": "Audit",
+    "ioBs": []
+  },
