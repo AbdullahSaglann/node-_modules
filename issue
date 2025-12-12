@@ -152,3 +152,15 @@ fail: Microsoft.EntityFrameworkCore.Update[10000]
          at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
          at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
          at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+
+
+
+
+ALTER TABLE incidents ADD COLUMN IF NOT EXISTS action VARCHAR(50);
+ALTER TABLE incidents ADD COLUMN IF NOT EXISTS destination VARCHAR(500);
+ALTER TABLE incidents ADD COLUMN IF NOT EXISTS file_name VARCHAR(500);
+ALTER TABLE incidents ADD COLUMN IF NOT EXISTS login_name VARCHAR(255);
+ALTER TABLE incidents ADD COLUMN IF NOT EXISTS email_address VARCHAR(255);
+ALTER TABLE incidents ADD COLUMN IF NOT EXISTS violation_triggers TEXT;
+-- Action için index ekle (opsiyonel ama performans için önerilen)
+CREATE INDEX IF NOT EXISTS idx_incidents_action ON incidents(action);
