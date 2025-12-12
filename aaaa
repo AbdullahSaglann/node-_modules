@@ -76,16 +76,29 @@ export default function ChannelActivity({ days = 30 }: { days?: number }) {
         if (incidents.length > 0) {
           const destMap = new Map<string, number>()
           incidents.forEach((incident: any) => {
-            let dest = 'Unknown'
-            if (incident.channel === 'Email') {
-              dest = incident.destination || 'gmail.com'
-            } else if (incident.channel === 'Web') {
-              dest = incident.destination || 'dropbox.com'
-            } else if (incident.channel === 'Cloud') {
-              dest = incident.destination || 'onedrive.com'
-            } else if (incident.channel === 'Removable Storage') {
-              dest = 'USB Device'
+            let dest = incident.destination
+
+            // If destination is empty/null, try to derive from channel
+            if (!dest) {
+              const channel = (incident.channel || '').toLowerCase()
+              if (channel.includes('email')) {
+                dest = 'Unknown Email'
+              } else if (channel.includes('web')) {
+                dest = 'Unknown Web Site'
+              } else if (channel.includes('cloud')) {
+                dest = 'Unknown Cloud Service'
+              } else if (channel.includes('removable') || channel.includes('usb')) {
+                dest = 'USB Device'
+              } else if (channel === 'endpoint_printing' || channel === 'printer') {
+                dest = 'Printer'
+              } else {
+                dest = 'Unknown'
+              }
+            } else {
+              // Clean up destination if needed (e.g., remove common prefixes if user improved it before)
+              // For now, use the raw destination as it seems to contain valid domains/paths
             }
+
             destMap.set(dest, (destMap.get(dest) || 0) + 1)
           })
 
