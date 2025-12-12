@@ -1,31 +1,4 @@
--- Action değerlerinin dağılımı
-SELECT action, COUNT(*) as count FROM incidents GROUP BY action ORDER BY count DESC;
--- Destination değerlerinin durumu (boş olmayanlar)
-SELECT destination, COUNT(*) as count FROM incidents 
-WHERE destination IS NOT NULL AND destination != '' 
-GROUP BY destination ORDER BY count DESC LIMIT 20;
--- Dolu olan alanların sayısı
-SELECT 
-  COUNT(*) as total,
-  COUNT(action) as action_count,
-  COUNT(destination) as destination_count,
-  COUNT(file_name) as file_name_count,
-  COUNT(login_name) as login_name_count,
-  COUNT(email_address) as email_address_count,
-  COUNT(violation_triggers) as violation_triggers_count
-FROM incidents;
--- 100 örnek kayıt
-SELECT id, action, destination, file_name, login_name, email_address 
+SELECT id, action, destination, file_name, login_name 
 FROM incidents 
-WHERE action IS NOT NULL OR destination IS NOT NULL OR file_name IS NOT NULL
-LIMIT 100;
-
-SELECT action, COUNT(*) as count FROM incidents GROUP BY action ORDER BY count DESC;
-
-
-
-[null]	538
-"AUTHORIZED"	206
-"BLOCKED"	101
-"QUARANTINED"	49
-"RELEASED"	2
+WHERE action IS NOT NULL 
+LIMIT 5;
