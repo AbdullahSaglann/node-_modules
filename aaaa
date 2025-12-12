@@ -3,6 +3,37 @@ DELETE FROM incidents;
 
 redis-cli DEL dlp:incidents
 
+      Incident pushed to Redis stream: MessageId=1765525377946-0, UserEmail=butunf, Timestamp=12/12/2025 00:35:33
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377946-1, UserEmail=KUVEYTTURK\mahirs, Timestamp=12/11/2025 23:03:08
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377946-2, UserEmail=KUVEYTTURK\mahirs, Timestamp=12/11/2025 23:03:09
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377946-3, UserEmail=KUVEYTTURK\mahirs, Timestamp=12/11/2025 23:03:10
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377947-0, UserEmail=KUVEYTTURK\mahirs, Timestamp=12/11/2025 23:03:10
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377947-1, UserEmail=KUVEYTTURK\mahirs, Timestamp=12/11/2025 23:03:10
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377947-2, UserEmail=KUVEYTTURK\mahirs, Timestamp=12/11/2025 23:03:11
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377947-3, UserEmail=kusakh, Timestamp=12/11/2025 23:42:36
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377948-0, UserEmail=akbayiro, Timestamp=12/12/2025 00:48:53
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377948-1, UserEmail=KUVEYTTURK\yarif, Timestamp=12/12/2025 00:07:45
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377948-2, UserEmail=suntexagrid, Timestamp=12/12/2025 06:08:42
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377948-3, UserEmail=murozkan, Timestamp=12/12/2025 01:55:16
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377948-4, UserEmail=butunf, Timestamp=12/12/2025 00:35:23
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377949-0, UserEmail=murozkan, Timestamp=12/12/2025 01:53:59
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      Incident pushed to Redis stream: MessageId=1765525377949-1, UserEmail=pfurkan, Timestamp=12/12/2025 07:16:11
+info: DLP.RiskAnalyzer.Collector.Services.CollectorBackgroundService[0]
+      Successfully pushed 1570 incidents to Redis (Errors: 0)
 fail: DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient[0]
       Error while fetching DLP configuration from Analyzer API
       System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:5001)
@@ -14,6 +45,23 @@ fail: DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient[0]
          --- End of inner exception stack trace ---
          at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
          at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+         at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+         at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+         at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+         at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+         at DLP.RiskAnalyzer.Collector.Services.AnalyzerConfigClient.FetchConfigAsync(CancellationToken cancellationToken) in C:\Users\syadm55576\Desktop\dlp-risk-adaptive-protection-csharp-main\DLP.RiskAnalyzer.Collector\Services\AnalyzerConfigClient.cs:line 37
+warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Failed to load DLP configuration from Analyzer API. Collector will use appsettings.json defaults.
+warn: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Please ensure DLP API settings are configured via Settings page in the dashboard.
+info: DLP.RiskAnalyzer.Collector.Services.DlpConfigurationSyncService[0]
+      Subscribed to DLP config updates via Redis channel dlp:config:updated
+info: DLP.RiskAnalyzer.Collector.Services.DlpRuntimeConfigProvider[0]
+      DLP configuration updated via Analyzer API (scheduled poll): 172.16.245.126::9443, HTTPS=True, Timeout=299s, Username=apiuser
+info: DLP.RiskAnalyzer.Collector.Services.DLPCollectorService[0]
+      DLP Collector HTTP client reconfigured for 172.16.245.126:9443
          at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
          at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
          at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
